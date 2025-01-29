@@ -9,17 +9,21 @@ public class GCD {
         }
         return a;
     }
+
     public static int lcm(int a, int b) {
         return (a * b) / gcd(a, b);
     }
-    public static void main(String[] args) {
+
+    public static void solveint() {
         Scanner scanner = new Scanner(System.in);
         System.out.print("Enter two numbers: ");
         int num1 = scanner.nextInt();
         int num2 = scanner.nextInt();
         System.out.println("GCD: " + gcd(num1, num2));
         System.out.println("LCM: " + lcm(num1, num2));
-        scanner.close();
+    }
+
+    public static void main(String[] args) {
+        solveint();
     }
 }
-

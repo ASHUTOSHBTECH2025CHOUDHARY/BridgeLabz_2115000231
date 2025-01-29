@@ -7,7 +7,7 @@ public class TempratureConverttor {
     public static double celsiusToFahrenheit(double c) {
         return (c * 9 / 5) + 32;
     }
-    public static void main(String[] args) {
+    public static void solveint() {
         Scanner scanner = new Scanner(System.in);
         System.out.print("Enter 1 for Fahrenheit to Celsius, 2 for Celsius to Fahrenheit: ");
         int choice = scanner.nextInt();
@@ -17,9 +17,10 @@ public class TempratureConverttor {
             System.out.println("Converted: " + fahrenheitToCelsius(temp) + " °C");
         } else if (choice == 2) {
             System.out.println("Converted: " + celsiusToFahrenheit(temp) + " °F");
-        } else {
-            System.out.println("Invalid choice.");
         }
     }
-}
 
+    public static void main(String[] args) {
+        solveint();
+    }
+}
