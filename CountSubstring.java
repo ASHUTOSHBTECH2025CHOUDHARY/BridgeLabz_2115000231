@@ -2,15 +2,18 @@ import java.util.Scanner;
 
 public class CountSubstring {
     public static void main(String[] args) {
-        Scanner sc=new Scanner(System.in);
-        String s=sc.nextLine();
-        String subStr=sc.nextLine();
-        int count=0;
-        int index=0;
-        while((index=s.indexOf(subStr,index))!=-1){
-            index+=subStr.length();
-            count++;
+        Scanner input = new Scanner(System.in);
+        String text = input.nextLine();
+        String pattern = input.nextLine();
+        int matchCount = 0;
+        int patternLength = pattern.length();
+
+        for (int i = 0; i <= text.length() - patternLength; i++) {
+            if (text.startsWith(pattern, i)) {
+                matchCount++;
+            }
         }
-        System.out.println("Number of times substring occur "+count);
+
+        System.out.println("The substring appears: " + matchCount + " times");
     }
 }

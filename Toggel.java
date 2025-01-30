@@ -1,15 +1,23 @@
 import java.util.Scanner;
 
-public class Toggel {
+public class Toggle {
     public static void main(String[] args) {
-        Scanner sc=new Scanner(System.in);
-        String s=sc.nextLine();
-        String toggelstring="";
-        for(int i=0;i<s.length();i++){
-            if(s.charAt(i)>='a'&&s.charAt(i)<='z') toggelstring +=Character.toUpperCase(s.charAt(i));
-            else toggelstring +=Character.toLowerCase(s.charAt(i));
+        Scanner scanner = new Scanner(System.in);
+        String input = scanner.nextLine();
+        String result = "";
+
+        for (int i = 0; i < input.length(); i++) {
+            char character = input.charAt(i);
+            if (character >= 'a' && character <= 'z') {
+                result += (char) (character - 'a' + 'A');
+            } else if (character >= 'A' && character <= 'Z') {
+                result += (char) (character - 'A' + 'a');
+            } else {
+                result += character;
+            }
         }
-        System.out.println("Original String "+s);
-        System.out.println("Toggeled String "+toggelstring);
+
+        System.out.println("Input String: " + input);
+        System.out.println("Converted String: " + result);
     }
 }
