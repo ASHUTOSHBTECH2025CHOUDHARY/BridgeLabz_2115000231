@@ -21,9 +21,14 @@ class Book{
 }
 public class LibraryManagementSystem {
     public static void main(String[] args) {
+        // Creating object and initialize using constructor
         Book book=new Book("Fault in our stars","Unknown","asdlf3434");
+        //checking is book is instance of Book
         if(book instanceof  Book){
             book.getBookDetails();
+        }
+        else{
+            System.out.println(" Invalid! Instance of given Book class");
         }
     }
 }

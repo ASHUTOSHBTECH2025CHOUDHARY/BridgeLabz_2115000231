@@ -19,9 +19,14 @@ class BankAccount{
 }
 public class BankAccountSystem {
     public static void main(String[] args) {
+        // Creating object and initialize using constructor
         BankAccount account1=new BankAccount("34353534kd","Hemmant");
+        // checking is account1 is instance of BankAccount
         if(account1 instanceof BankAccount){
             account1.showAccountDetails();
+        }
+        else{
+            System.out.println(" Invalid! Instance of given BankAccount class");
         }
     }
 }
