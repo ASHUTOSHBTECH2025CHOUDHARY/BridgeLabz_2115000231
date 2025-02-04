@@ -1,4 +1,4 @@
-# BridgeLabz-30 Progress Tracker
+# BridgeLabz-51 Progress Tracker
 
 ## **Date-:16-01-25**
 - Installed Git Bash.
@@ -32,11 +32,11 @@
 - Solved Level 2 assignment, with Multi-Dimentional Arrays in java.
 - Strengthened understanding of Arrays in java concepts.
 
-## **Date-:28-01-2025**
+## **Date-:28-01-25**
 - Solved Level 1,2, and 3 assignment ,focusing on method calling and recursive methods.
 - Strengthened understanding of method calling and recursive methods java.lang.Math class.
 
-## **Date-:29-01-2025**
+## **Date-:29-01-25**
 - Solved practice problems of assignments, focusing on Built-In functions.
 - Solved practice problems of assignments, focusing on Handling strings and common string functions. 
 - Strengthened understanding were to use built-in functions to write clean code.
