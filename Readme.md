@@ -29,7 +29,7 @@
 
 ## **Date-:25-01-25**
 - Solved Level 1 assignment, focusing on Basics of Arrays in java.
-- Solved Level 2 assignment, with Multi-Dimentional Arrays in java.
+- Solved Level 2 assignment, with Multi Diementional Arrays in java.
 - Strengthened understanding of Arrays in java concepts.
 
 ## **Date-:28-01-25**
