@@ -59,3 +59,8 @@
 - Solved Oops assignment , focusing on calling class method and instance method.
 - Learned about Class members and methods and usage of "instanceof" keyword
 - Strengthened understanding of class and instance methods
+
+## **Date-:05-02-2025**
+- Solved assignment, focusing on Association, Composition and Aggregation.
+- Learned about Class , Object and Sequence Diagrams.
+- Strengthened understanding of Association, Composition and Aggregation.
