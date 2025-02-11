@@ -29,8 +29,10 @@ interface Gps {
 }
 
 class Car extends Vehicle implements Gps {
+
     //Variable of class
     private String location;
+
 
     // Constructor to initialize car details
     public Car(int vehicleId, String driverName, double ratePerKm) {
@@ -50,6 +52,7 @@ class Car extends Vehicle implements Gps {
         return location;
     }
 
+
     // Method to update location
     @Override
     public void updateLocation(String newLocation) {
@@ -58,6 +61,7 @@ class Car extends Vehicle implements Gps {
 }
 
 class Bike extends Vehicle implements Gps {
+
     //Variable of class
     private String location;
 
@@ -143,4 +147,3 @@ public class RideHailingApplication {
         });
     }
 }
-
