@@ -37,7 +37,6 @@ public class MatrixSearch {
         }
 
         int key = sc.nextInt();
-        sc.close();
 
         boolean found = locateElement(grid, key);
         System.out.println("Is " + key + " in matrix? -> " + (found ? "Yes" : "No"));
