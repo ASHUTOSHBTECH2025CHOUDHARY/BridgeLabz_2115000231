@@ -112,9 +112,9 @@ public class DynamicOnlineMarketplace {
         storage.displayCatalog();
         // Apply price cuts
         System.out.println("\nApplying Discounts:");
-        DiscountManager.applyDiscount(novel, 10); // 10% off
-        DiscountManager.applyDiscount(tee, 20); // 20% off
-        DiscountManager.applyDiscount(mobile, 15); // 15% off
+        DiscountManager.applyDiscount(novel, 10);
+        DiscountManager.applyDiscount(tee, 20);
+        DiscountManager.applyDiscount(mobile, 15);
         // Show updated catalog
         System.out.println("\nUpdated Product Catalog:");
         storage.displayCatalog();
