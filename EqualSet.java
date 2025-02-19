@@ -10,6 +10,6 @@ public class EqualSet {
 
         // Check if the two sets are equal
         boolean areEqual = set1.equals(set2);
-        System.out.println("Are the sets equal? " + areEqual);
+        System.out.println( areEqual);
     }
 }
