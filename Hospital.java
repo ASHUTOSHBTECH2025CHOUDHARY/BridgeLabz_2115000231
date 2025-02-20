@@ -34,7 +34,7 @@ public class Hospital {
         System.out.println("Order of treatment:");
         while (!pq.isEmpty()) {
             Patient p = pq.poll();
-            System.out.println(p.name + " (Severity: " + p.severity + ")");
+            System.out.println(p.name + " " + p.severity);
         }
     }
 }
