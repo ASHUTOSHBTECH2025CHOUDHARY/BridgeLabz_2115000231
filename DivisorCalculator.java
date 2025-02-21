@@ -11,7 +11,7 @@ public class DivisorCalculator {
         } catch (ArithmeticException e) {
             System.out.println("Division by zero is not allowed.");
         } finally {
-            System.out.println("The operation has been completed.");
+            System.out.println("The operation completed.");
         }
     }
 }
