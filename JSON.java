@@ -1,60 +1,57 @@
 import java.lang.annotation.*;
 import java.lang.reflect.Field;
-import java.util.LinkedHashMap;
+import java.util.HashMap;
 import java.util.Map;
 
-// Define the custom annotation for JSON field mapping
+// Define the @JsonField annotation
 @Retention(RetentionPolicy.RUNTIME)
 @Target(ElementType.FIELD)
-@interface JsonProperty {
-    String key();
+@interface JsonField {
+    String name();
 }
-
-class UserAccount {
-    @JsonProperty(key = "username")
-    private String name;
-    @JsonProperty(key = "age")
-    private int yearsOld;
-    @JsonProperty(key = "email_address")
+class User {
+    @JsonField(name = "user_name")
+    private String username;
+    @JsonField(name = "user_email")
     private String email;
-    public UserAccount(String name, int yearsOld, String email) {
-        this.name = name;
-        this.yearsOld = yearsOld;
+    private int age;
+    public User(String username, String email, int age) {
+        this.username = username;
         this.email = email;
+        this.age = age;
     }
-}
-class ObjectToJsonConverter {
-    public static String convertToJson(Object obj) {
-        try {
-            Class<?> objClass = obj.getClass();
-            Map<String, String> jsonKeyValuePairs = new LinkedHashMap<>();
-            for (Field field : objClass.getDeclaredFields()) {
+
+    public String toJson() {
+        Map<String, String> jsonMap = new HashMap<>();
+        Field[] fields = this.getClass().getDeclaredFields();
+        for (Field field : fields) {
+            if (field.isAnnotationPresent(JsonField.class)) {
                 field.setAccessible(true);
-                if (field.isAnnotationPresent(JsonProperty.class)) {
-                    String jsonKey = field.getAnnotation(JsonProperty.class).key();
-                    Object value = field.get(obj);
-                    jsonKeyValuePairs.put(jsonKey, String.valueOf(value));
+                try {
+                    String key = field.getAnnotation(JsonField.class).name();
+                    String value = field.get(this).toString();
+                    jsonMap.put(key, value);
+                } catch (IllegalAccessException e) {
+                    e.printStackTrace();
                 }
             }
-            StringBuilder jsonString = new StringBuilder("{");
-            for (Map.Entry<String, String> entry : jsonKeyValuePairs.entrySet()) {
-                jsonString.append("\"").append(entry.getKey()).append("\": \"").append(entry.getValue()).append("\", ");
-            }
-            if (jsonString.length() > 1) {
-                jsonString.delete(jsonString.length() - 2, jsonString.length());
-            }
-            jsonString.append("}");
-            return jsonString.toString();
-        } catch (Exception e) {
-            return "Serialization error: " + e.getMessage();
         }
+        StringBuilder jsonString = new StringBuilder("{");
+        for (Map.Entry<String, String> entry : jsonMap.entrySet()) {
+            jsonString.append("\"").append(entry.getKey()).append("\": \"").append(entry.getValue()).append("\", ");
+        }
+        if (jsonString.length() > 1) {
+            jsonString.setLength(jsonString.length() - 2);
+        }
+        jsonString.append("}");
+        return jsonString.toString();
     }
 }
-public class Json {
+
+public class JSON {
     public static void main(String[] args) {
-        UserAccount user = new UserAccount("Ashu", 23, "ashu@example.com");
-        String jsonOutput = ObjectToJsonConverter.convertToJson(user);
+        User user = new User("Ashutosh", "ashu@example.com", 25);
+        String jsonOutput = user.toJson();
         System.out.println(jsonOutput);
     }
 }
-
