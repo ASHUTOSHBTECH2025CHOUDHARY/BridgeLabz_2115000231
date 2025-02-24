@@ -6,7 +6,7 @@
         }
     }
 
-    public class Main {
+    public class Calcualtors {
         public static void main(String[] args) {
             try {
                 // Create instance
