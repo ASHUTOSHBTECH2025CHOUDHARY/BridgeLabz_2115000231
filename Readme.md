@@ -64,3 +64,18 @@
 - Solved assignment, focusing on Association, Composition and Aggregation.
 - Learned about Class , Object and Sequence Diagrams.
 - Strengthened understanding of Association, Composition and Aggregation.
+
+## **Date-:07-02-25**
+- Solved assignment, focusing on Inheritance.
+- Learned about Overriding, Single Level Inheritance, Multilevel Inheritance , Hierarchical Inheritance
+- Strengthened understanding of Inheritance and Overriding.
+
+## **Date-:10-02-25**
+- Solved assignment, focusing on Encapsulation, polymorphism, Interface and Abstract class
+- Learned about Difference btw abstract class and Abstract class.
+- Strengthened understanding of Encapsulation and polymorphism
+
+## **Date-:12-02-25**
+- Solved assignment, focusing on LinkedList and its Types.
+- Learned to Implement LinkedList.
+- Strengthened understanding of singly,doubly, circular LinkedList.
