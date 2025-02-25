@@ -1,0 +1,9 @@
+{
+  "students": [
+    {"id": "101", "name": "Alice", "age": "20", "marks": "85"},
+    {"id": "102", "name": "Bob", "age": "22", "marks": "78"},
+    {"id": "103", "name": "Charlie", "age": "21", "marks": "90"},
+    {"id": "104", "name": "David", "age": "23", "marks": "88"},
+    {"id": "105", "name": "Eva", "age": "19", "marks": "95"}
+  ]
+}
