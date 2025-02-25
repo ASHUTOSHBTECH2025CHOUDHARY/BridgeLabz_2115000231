@@ -18,7 +18,7 @@ class Application {
     @BugReport(issue = "Handles null values incorrectly")
     @BugReport(issue = "Causes delay with large datasets")
     public void executeTask() {
-        System.out.println("Executing task...");
+        System.out.println("Executing task");
     }
 }
 
