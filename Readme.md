@@ -79,3 +79,38 @@
 - Solved assignment, focusing on LinkedList and its Types.
 - Learned to Implement LinkedList.
 - Strengthened understanding of singly,doubly, circular LinkedList.
+
+## **Date-:13-02-25**
+- Solved assignment, focusing on Stack, Queue and Hashmap and Hashing functions.
+- Learned to implement Stack, Queue and Hashmap.
+- Strengthened understanding of FIFO and LIFO.
+
+## **Date:14-02-25**
+- Solved assignment, focusing on Soring Algorithms.
+- Learned to implement Bubble Sort and Insertion Sort.
+- Strengthened understanding of Merge Sort and Quick Sort.
+
+## **Date:-16-02-25**
+- Solved assignment, focusing on StringBuilder and StringBuffer.
+- Learned to implement Linear and Binary search.
+- Strengthened understanding of FileReader and InputStream Reader.
+
+## **Date:-17-02-25**
+- Solved assignment, focusing on Time and space Complexity Optimization.
+- Learned to implement General Algorithm Best Practices.
+- Strengthened understanding of Time and space Complexity Optimization.
+
+## **Date:-18-02-25**
+- Solved assignment, focusing on Java Generics.
+- Learned to implement usages of Java Generics.
+- Strengthened understanding of concept of Generics.
+
+## **Date:-20-02-25**
+- Solved assignment, focusing on Collections.
+- Learned to implement usages of Collections.
+- Strengthened understanding of concept Collections.
+
+## **Date:-21-02-25**
+- Solved assignment, focusing on Java Streams.
+- Learned to implement usages of Java Streams. 
+- Strengthened understanding of concept of Java Streams.
