@@ -114,3 +114,59 @@
 - Solved assignment, focusing on Java Streams.
 - Learned to implement usages of Java Streams. 
 - Strengthened understanding of concept of Java Streams.
+
+## **Date:-22-02-25**
+- Solved assignment, focusing on Regex and Junit.
+- Learned to implement usages of Regex.
+
+## **Date:-24-02-25**
+- Solved assignment, focusing on Reflection and Annotations.
+- Learned to implement usages of Reflections.
+
+## **Date:-25-02-25**
+- Solved assignment, focusing on CSV handling.
+- Learned to implement usages of ReadingCSV.
+- Strengthened understanding of concept of file management.
+
+## **Date:-26-02-25**
+- Solved assignment, focusing on JSON handling.
+- Learned to implement usages of ReadingJSON.
+- Strengthened understanding of concept of file management.
+
+## **Date:-25-02-25**
+- Solved assignment, focusing on CSV handling.
+- Learned to implement usages of ReadingCSV.
+- Strengthened understanding of concept of file management.
+
+## **Date:-28-02-25**
+- Solved assignment, focusing on Tomcat Servelt.
+- Learned to implement usages of Servelt.
+- Create a simple Java Web Server and Simple Login Servlet.
+
+## **Date:-01-03-25**
+- Solved assignment, focusing on Spring Intro.
+- Learned to implement usages of  Dependency Injection.
+- Created Hello Messaging App.
+
+## **Date:-03-03-25**
+- Created Greeting App.
+- Learned to implement Spring REST API Calls and Request Handling .
+
+## **Date:-05-03-25**
+- Updated Greeting App and Payroll App is Created.
+- Added User Registration and Login in the Greeting App.
+- Supporting the REST API Calls in the Controller and Development with H2 DB in Payroll App.
+
+## **Date:-06-03-25**
+- Payroll App set up with Service Layer and Created AddressBook.
+- Make sure all CURL Calls – GET, GET by ID, POST, PUT to Update by ID, and DELETE work with simple Controller
+-  Make sure all CURL Calls – GET, GET by ID, POST, PUT to Update by ID, and DELETE work with simple Service Layer and storing in a Local List.
+
+## **Date:-07-03-25**
+- Updated Greeting App.
+- Implement the reset and forgot password in the Greeting App.
+
+## **Date:-08-03-25**
+- Updated Payroll App and AddressBook.
+- Added Loggers in Payroll and AddressBook.
+- Application Settings, Validators and Exception Handlers.
